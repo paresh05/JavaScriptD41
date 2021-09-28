@@ -1,28 +1,4 @@
-let i = 0;
-var number;
-const { log } = require("console");
-const readline = require("readline");
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-var arrayOfNumbers = [];
-while(i<5){
-  readInput();
-  i++;
-}
-function readInput() {
-  rl.question("Enter the number: ", (answer) => {
-    // TODO: Log the answer in a database
-    number = answer;
-    console.log(`The number is: ${answer}`);
-    rl.close();
-    arrayOfNumbers[i] = number;
-    getMinMax();
-  });
-}
-function getMinMax() {
+arrayOfNumbers=[113,555,885,211,114];
   let maxNumber = arrayOfNumbers[0];
   let minNumber = arrayOfNumbers[0];
 
@@ -36,4 +12,3 @@ function getMinMax() {
   }
   console.log("Maximum number is: " + maxNumber);
   console.log("Minimum number is: " + minNumber);
-}
