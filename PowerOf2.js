@@ -11,7 +11,7 @@ rl.question("Enter the number: ", (answer) => {
   // TODO: Log the answer in a database
   number = answer;
   rl.close();
-for(let i =0; i<=number;i++){
-    console.log((2**i));
-}
+  for (let i = 0; i <= number; i++) {
+    console.log(2 ** i);
+  }
 });
