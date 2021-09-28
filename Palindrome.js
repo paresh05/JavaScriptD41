@@ -24,7 +24,6 @@ rl.question("Enter the String: ", (answer) => {
   // TODO: Log the answer in a database
   string = answer;
   rl.close();
-  // take input
 
   // call the function
   const value = checkPalindrome(string);
